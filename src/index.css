@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-primary: #ff3b30;
+  --color-surface: #333333;
+  --color-border: #333333;
+}
+
+:root {
+  --background: #0a0a0a;
+  --Primary-Accent: #ff3b30;
+  --Surface: #1a1a0a;
+  --Border: #333333;
+
+  --neko-primary: #0F172A;
+  --neko-secondary: #1E293B;
+  --neko-accent: #00D9FF;
+  --neko-success: #10B981;
+  --neko-warning: #F59E0B;
+  --neko-error: #EF4444;
+}
+
+img {
+  width: 100%;
+}
+
+@layer components {
+  .glass {
+    background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
+    backdrop-filter: blur(16px);
+    border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
+  }
+
+  .glass-strong {
+    background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+    backdrop-filter: blur(16px);
+    border: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 30px color-mix(in srgb, var(--color-primary) 50%, transparent);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 20%, transparent), inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
+  }
+}
