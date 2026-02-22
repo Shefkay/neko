@@ -1,6 +1,6 @@
 import Button from "../common/Button"
 import { Menu, X } from "lucide-react"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 const navLinks = [
@@ -12,9 +12,18 @@ const navLinks = [
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className={`py-2 bg-background text-white border-b border-border`}>
+    <header className={`fixed top-0 left-0 right-0 transition-all duration-300 py-2 text-white border-b border-border ${isScrolled ? "glass-strong" : "bg-transparent"} z-50`}>
       <nav className="container mx-auto px-6 flex items-center justify-between ">
         <Link to="/" className="w-32">
           <img src="./logo/nekowhite.png" alt="neko logo" />

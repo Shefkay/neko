@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <div id="#essential" className="text-black pt-32">
-      Hellooooooo
+    <div id="#essential" className="text-white pt-32">
+      Footer
     </div>
   )
 }

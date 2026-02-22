@@ -21,6 +21,14 @@
   --neko-error: #EF4444;
 }
 
+body {
+  background-color: var(--background);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
 }
