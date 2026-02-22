@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div id="#essential" className="text-white pt-32">
+    <div className="text-white bg-surface pt-32">
       Footer
     </div>
   )
