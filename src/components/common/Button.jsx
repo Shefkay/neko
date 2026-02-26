@@ -5,7 +5,7 @@ function Button({ className = "", size = "default", color = "primary", children 
     sm: "px-4 py-2 text-sm",
     default: "px-6 py-2 text-base",
     lg: "px-8 py-2 text-lg",
-    full: "flex-1 px-8 py-2 text-lg text-left",
+    full: "flex-1 px-4 py-2 text-lg text-left",
   };
 
   const classes = `${baseClass} ${sizeClasses[size] || ""} ${className}`.trim();

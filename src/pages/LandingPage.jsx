@@ -60,7 +60,7 @@ function LandingPage() {
 
         {/* Essential */}
         <div className="py-32">
-          <div className="grid grid-cols-2 gap-4 mb-8">
+          <div className="grid lg:grid-cols-2 gap-4 mb-8">
             <div>
               <h2 className="text-4xl mb-6">Essential Apps (Beta)</h2>
               <p>Make your homescreen yours - build apps and browse community creations.</p>
