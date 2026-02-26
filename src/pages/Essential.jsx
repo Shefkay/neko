@@ -35,7 +35,7 @@ function Essential() {
         "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=500",
     },
     {
-      id: 1,
+      id: 5,
       title: "BIG EYES",
       likes: "4.4K",
       author: "Carl Pei",
@@ -43,7 +43,7 @@ function Essential() {
         "https://images.unsplash.com/photo-1547721064-da6cfb341d50?q=80&w=500",
     },
     {
-      id: 2,
+      id: 6,
       title: "TICTAP PLAY",
       likes: "3K",
       author: "Keith",
@@ -51,7 +51,7 @@ function Essential() {
         "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=500",
     },
     {
-      id: 3,
+      id: 7,
       title: "F1 SCHEDULE",
       likes: "2.1K",
       author: "Heydooxan",
@@ -59,7 +59,7 @@ function Essential() {
         "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=500",
     },
     {
-      id: 4,
+      id: 8,
       title: "MOON PHASE",
       likes: "1.7K",
       author: "Ava",
