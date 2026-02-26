@@ -2,7 +2,7 @@
 function DAppCard({ title, likes, author, imageUrl }) {
 
   return (
-    <div className="bg-zinc-800/70 backdrop-blur-lg rounded-3xl p-6 w-72 h-80 flex flex-col justify-between shadow-xl hover:scale-105 transition-transform duration-300">
+    <div className="bg-zinc-800/70 rounded-3xl p-6 w-full h-80 flex flex-col justify-between hover:bg-primary/3 hover:border border-border transition-transform duration-300">
       {/* Header */}
       <div className="flex justify-between items-center text-xs text-zinc-400 tracking-widest">
         <span>{title}</span>

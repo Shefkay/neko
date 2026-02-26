@@ -75,7 +75,7 @@ function Essential() {
           <h1 className="text-7xl">Essential Apps (Beta)</h1>
           <p>Make your homescreen yours - build apps and browse community creations.</p>
         </div>
-        <div className="grid grid-cols-4 gap-3 py-32">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 py-32">
           {dapps.map((dapp) => (
             <DAppCard key={dapp.id} {...dapp} />
           ))}
