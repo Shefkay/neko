@@ -46,7 +46,7 @@ function Header() {
 
         {/* CTA */}
         <div className="hidden md:block">
-          <Button>Connet Wallet</Button>
+          <Button className="bg-primary hover:bg-primary/90">Connet Wallet</Button>
         </div>
 
         {/* Mobile menu button */}
@@ -69,7 +69,7 @@ function Header() {
                 {link.label}
               </NavLink>
             ))}
-            <Button onClick={() => setIsMobileMenuOpen(false)}>
+            <Button className="bg-primary hover:bg-primary/90" onClick={() => setIsMobileMenuOpen(false)}>
               Connet Wallet
             </Button>
           </div>

@@ -66,8 +66,8 @@ function LandingPage() {
               <p>Make your homescreen yours - build apps and browse community creations.</p>
             </div>
             <div className="flex items-center gap-8">
-              <Button className="" size="full">Create your app</Button>
-              <Button className="" size="full">See all</Button>
+              <Button className="bg-primary hover:bg-primary/90" size="full">Create your app</Button>
+              <Button className="bg-primary hover:bg-primary/90" size="full">See all</Button>
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
